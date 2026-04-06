@@ -23,7 +23,7 @@
 #
 # The following information is for reference only and not required by the build tools.
 #
-#  VALID_ARCHITECTURES           = IA32 X64 AARCH64
+#  VALID_ARCHITECTURES           = IA32 X64 AARCH64 LOONGARCH64
 #
 
 [Sources]
@@ -45,6 +45,10 @@
 [Sources.AARCH64]
   AArch64/EbcSupport.c
   AArch64/EbcLowLevel.S
+
+[Sources.LOONGARCH64]
+  LoongArch64/EbcSupport.c
+  LoongArch64/EbcLowLevel.S
 
 [Packages]
   MdePkg/MdePkg.dec
